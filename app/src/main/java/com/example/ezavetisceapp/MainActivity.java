@@ -27,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
     private TextView zivali;
     private String url = "https://dev-e-zavetisce.azurewebsites.net/api/v1/Pets";
 
+    public static final String EXTRA_MESSAGE = "com.example.ezavetisceapp.MESSAGE";
+
+    public void addPetActivity (View view) {
+        Intent intent = new Intent(this,AddPetActivity.class);
+        String message = "Dodaj zival v seznam.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
