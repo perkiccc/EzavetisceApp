@@ -35,7 +35,7 @@ public class AddPetActivity extends AppCompatActivity {
     private EditText type;
 
     private RequestQueue requestQueue;
-    private String url = "https://dev-e-zavetisce.azurewebsites.net/api/v1/Pets";
+    private String url = "https://e-zavetisce.azurewebsites.net/api/v1/Pets";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
